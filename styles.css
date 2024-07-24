@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: white;
+  width: 50px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: burlywood;
+}
+
+*::selection {
+  background-color: #38ada9;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: white;
+  display: flex;
+  /*justify-content: space-evenly;*/
+  align-items: center;
+  z-index: 100;
+}
+
+.navigation a {
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+  color: burlywood;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: black;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: none;
+  color: burlywood;
+  margin-left: 0;
+  margin-right: 300px;
+}
+
+.logo:hover {
+  color: black;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 0 10%;
+  background: url(home\ 3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  max-width: 800px;
+  margin-right: 50px;
+}
+
+.content h1 {
+  font-size: 60px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.content h3 {
+  color: rgb(194, 155, 104);
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.home-btn {
+  width: 100px;
+  height: 20px;
+}
+
+.home-btn a {
+  position: relative;
+  width: 150px;
+  height: 200%;
+  align-items: center;
+  background-color: rgb(157, 124, 81);
+  display: inline-flex;
+  justify-content: center;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(157, 124, 81);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.home-btn a:hover {
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  padding: 15px;
+  margin: 30px 0;
+  margin-bottom: 50px;
+}
+
+span {
+  color: brown;
+}
+
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-video,
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-video {
+  margin-right: 10px;
+  align-items: center;
+}
+
+.video {
+  margin-left: 300px;
+
+  border: 10px solid burlywood;
+  width: 50vh;
+}
+
+.about-content {
+  margin-right: 200px;
+  margin-left: 70px;
+}
+
+.about-content h3 {
+  margin-top: 0;
+  font-size: 50px;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 20px;
+  color: burlywood;
+}
+
+#products {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#products h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 items per row */
+  box-sizing: border-box;
+  margin: 10px;
+  background: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.product-color {
+  font-size: 1em;
+  color: #999;
+  margin-top: 5px;
+}
+
+.contact-form {
+  background: url(✧･ﾟ_\ _✧aesthetic\ magical\ sparkle\ ✧･ﾟ_\ _✧.jpg) no-repeat
+    center center fixed;
+  background-size: cover;
+}
+
+.btn-1 {
+  padding: 15px 28px;
+  background-color: brown;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: burlywood;
+  color: black;
+  border: 2px solid black;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+}
+
+.contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: black;
+  background: rgba(241, 241, 241);
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: rgb(85, 26, 139);
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: black;
+  border: 2px solid rgb(85, 26, 139);
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow: inset 0 0 10px black, 0 0 10px black;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  color: burlywood;
+  border: 2px solid burlywood;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid burlywood;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+}
